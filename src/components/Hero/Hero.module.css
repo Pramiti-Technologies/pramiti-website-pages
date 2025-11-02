@@ -1,0 +1,19 @@
+.backgroundDot {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.15;
+  animation: float var(--duration) ease-in-out infinite;
+  animation-delay: var(--delay);
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(var(--x-offset), var(--y-offset)) scale(1.1);
+  }
+  66% {
+    transform: translate(calc(var(--x-offset) * -0.5), calc(var(--y-offset) * 1.5)) scale(0.9);
+  }
+}

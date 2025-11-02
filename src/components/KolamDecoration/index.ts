@@ -1,0 +1,1 @@
+export { KolamDecoration } from './KolamDecoration';

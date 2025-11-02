@@ -1,0 +1,99 @@
+.kolamContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* Top Right Position - Partially off-screen showing only left portion */
+.topRight {
+  position: absolute;
+  top: -100px;
+  right: -200px;
+  opacity: 0.35;
+  filter: brightness(1.2) contrast(1.1);
+}
+
+/* Bottom Left Position - Partially off-screen showing only right portion */
+.bottomLeft {
+  position: absolute;
+  bottom: -100px;
+  left: -200px;
+  opacity: 0.35;
+  filter: brightness(1.2) contrast(1.1);
+}
+
+/* Large Kolam Images */
+.kolamImageLarge {
+  width: 500px;
+  height: 500px;
+  object-fit: contain;
+}
+
+
+
+/* Responsive adjustments */
+@media (max-width: 1280px) {
+  .kolamImageLarge {
+    width: 420px;
+    height: 420px;
+  }
+  
+  .topRight {
+    top: -80px;
+    right: -180px;
+    opacity: 0.3;
+  }
+  
+  .bottomLeft {
+    bottom: -80px;
+    left: -180px;
+    opacity: 0.3;
+  }
+}
+
+@media (max-width: 1024px) {
+  .kolamImageLarge {
+    width: 350px;
+    height: 350px;
+  }
+  
+  .topRight {
+    top: -70px;
+    right: -150px;
+    opacity: 0.25;
+  }
+  
+  .bottomLeft {
+    bottom: -70px;
+    left: -150px;
+    opacity: 0.25;
+  }
+}
+
+@media (max-width: 768px) {
+  .kolamImageLarge {
+    width: 280px;
+    height: 280px;
+  }
+  
+  .topRight {
+    top: -60px;
+    right: -120px;
+    opacity: 0.2;
+  }
+  
+  .bottomLeft {
+    bottom: -60px;
+    left: -120px;
+    opacity: 0.2;
+  }
+  
+
+}
+
+
