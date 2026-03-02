@@ -6,18 +6,11 @@ import { SectionDivider } from '../SectionDivider';
 
 const team = [
   {
-    name: "Meenakshi",
+    name: "Manivannan. S",
     role: "Founder",
     quote: "Building sustainable solutions",
     translation: "",
     initials: "M"
-  },
-  {
-    name: "Mohan Kumar",
-    role: "Founder",
-    quote: "Innovation through excellence",
-    translation: "",
-    initials: "MK"
   },
   {
     name: "Jayandhan",

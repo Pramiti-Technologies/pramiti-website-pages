@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from '../ui/button';
+import logo from "../../assets/p-logo.png";
 
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -23,12 +24,12 @@ export function Navigation() {
   };
 
   const navLinks = [
-    { id: 'about', label: 'About' },
-    { id: 'services', label: 'Services' },
-    { id: 'careers', label: 'Careers' },
-    { id: 'team', label: 'Team' },
-    { id: 'vision', label: 'Vision' },
-    { id: 'contact', label: 'Contact' },
+    { id: 'about', label: 'ABOUT' },
+    { id: 'services', label: 'SERVICES' },
+    { id: 'careers', label: 'CAREERS' },
+    { id: 'team', label: 'TEAM' },
+    { id: 'vision', label: 'VISION' },
+    { id: 'contact', label: 'CONTACT' },
   ];
 
   return (
@@ -44,16 +45,7 @@ export function Navigation() {
             onClick={() => scrollToSection('hero')}
             className="flex items-center gap-2 hover:opacity-80 transition-opacity"
           >
-            <div className="w-8 h-8 sm:w-10 sm:h-10 text-primary">
-              <svg viewBox="0 0 40 40" fill="currentColor">
-                <circle cx="20" cy="20" r="3" />
-                <circle cx="20" cy="12" r="2" opacity="0.6" />
-                <circle cx="20" cy="28" r="2" opacity="0.6" />
-                <circle cx="12" cy="20" r="2" opacity="0.6" />
-                <circle cx="28" cy="20" r="2" opacity="0.6" />
-              </svg>
-            </div>
-            <span className="text-lg sm:text-xl font-serif text-foreground">Pramiti</span>
+            <img src={logo} alt="Pramiti Logo" className="w-auto object-contain"  style={{ width: '21%' }}/>
           </button>
 
           {/* Desktop Navigation */}
@@ -62,7 +54,7 @@ export function Navigation() {
               <button
                 key={link.id}
                 onClick={() => scrollToSection(link.id)}
-                className="text-sm text-foreground/80 hover:text-primary transition-colors"
+                className="text-foreground/80 hover:text-primary transition-colors"
               >
                 {link.label}
               </button>
@@ -89,6 +81,7 @@ export function Navigation() {
                   key={link.id}
                   onClick={() => scrollToSection(link.id)}
                   className="text-left px-2 py-2 text-foreground/80 hover:text-primary hover:bg-muted/50 rounded transition-colors"
+                  style={{ fontSize: '1.2rem' }}
                 >
                   {link.label}
                 </button>
