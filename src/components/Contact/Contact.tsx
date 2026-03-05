@@ -189,7 +189,7 @@ export function Contact() {
               className="text-center mt-12"
             >
               <p className="text-foreground/70 mb-4">
-                Email: <a href="mailto:hello@pramiti.co.in" className="text-primary hover:underline">hello@pramiti.co.in</a>
+                Email: <a href="mailto:contact@pramiti.co.in" className="text-primary hover:underline">contact@pramiti.co.in</a>
               </p>
               
               <div className="flex justify-center gap-4">
